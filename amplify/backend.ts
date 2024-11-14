@@ -35,11 +35,7 @@ const lambdaIntegration = new LambdaIntegration(
 );
 
 // create a new resource path with IAM authorization
-const itemsPath = myRestApi.root.addResource("hello", {
-  defaultMethodOptions: {
-    authorizationType: AuthorizationType.IAM,
-  },
-});
+const itemsPath = myRestApi.root.addResource("hello");
 
 // add methods you would like to create to the resource path
 itemsPath.addMethod("GET", lambdaIntegration);
