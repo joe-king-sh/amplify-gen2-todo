@@ -24,3 +24,7 @@ dist-ssr
 *.sw?
 
 tmp
+
+.amplify
+amplify_outputs*
+amplifyconfiguration*
